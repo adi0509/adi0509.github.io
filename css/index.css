@@ -53,6 +53,13 @@ html,body {
 
 }
 
+.intro-image img
+{
+	border-radius: 100%;
+	/*border: 1px solid #bc53ed;*/
+	border: 3px solid #ffffff;
+}
+
 /* ******************************  Scroll Button  ****************************** */
 .scroll
 {
@@ -96,16 +103,18 @@ html,body {
 
 .scroll span:after {
   content: '\00bb';
-  transform: scale(1.7, 1.7) rotate(90deg);
+  transform: scale(2.4, 1.8) rotate(90deg);
   position: absolute;
   opacity: 0;
-  top: 22px;
+  /*top: 22px;
   left: 10px;
-  right: 120px;
+  right: 120px;*/
   
-  /*top: -50px;
-  
-  transition: 1s;*/
+  top: 22px;
+  left: 40px;
+  top:-33px;
+  /*-webkit-transition-property: top, bottom;*/
+  transition: 1s;
 }
 
 .scroll:hover span {
@@ -114,10 +123,10 @@ html,body {
 
 .scroll:hover span:after {
   opacity: 1;
-  right: 0;
+  /*right: 0;*/
 
-  /*bottom: 80px;
-  right: 100px;*/
+  /*bottom: 80px;*/
+  top :33px;
 
 }
 
