@@ -30,7 +30,7 @@ html,body {
 }
 
 .bgcolor {
-	background-color: rgba(0,0,0,0.81);
+	background-color: rgba(0,0,0,0.71);
     position: absolute;
     top: 0;
     left: 0;
@@ -50,6 +50,74 @@ html,body {
 
 	margin-bottom: 5px;
 	padding-bottom: 5px; 
+
+}
+
+/* ******************************  Scroll Button  ****************************** */
+.scroll
+{
+	top: 500vh;
+}
+.scroll a
+{
+	background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 18px 38px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  border-radius: 32px;
+  transition-duration: 0.4s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.scroll a {
+  background-color: rgba(0,0,0,0.41);
+  color: White; 
+  border: 2px solid #bc53ed;
+}
+
+.scroll a:hover {
+  background-color: rgb(222, 173, 244, 0.45);
+  color: white;
+}
+
+.scroll span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.scroll span:after {
+  content: '\00bb';
+  transform: scale(1.7, 1.7) rotate(90deg);
+  position: absolute;
+  opacity: 0;
+  top: 22px;
+  left: 10px;
+  right: 120px;
+  
+  /*top: -50px;
+  
+  transition: 1s;*/
+}
+
+.scroll:hover span {
+  padding-bottom: 15px;
+}
+
+.scroll:hover span:after {
+  opacity: 1;
+  right: 0;
+
+  /*bottom: 80px;
+  right: 100px;*/
 
 }
 
